@@ -48,9 +48,16 @@ struct Menu: View {
         return NSPredicate(format: "title CONTAINS[cd] %@", searchText)
     }
 
+   
+   
+}
+
+extension Menu {
     func buildSortDescriptors() -> [NSSortDescriptor] {
         return [NSSortDescriptor(key: "title", ascending: true, selector: #selector(NSString.localizedStandardCompare))]
     }
+   
+    
     func getMenuData() {
         PersistenceController.shared.clear()
         URLSession.shared.dataTask(with: URL(string: "https://raw.githubusercontent.com/Meta-Mobile-Developer-PC/Working-With-Data-API/main/menu.json")!) { data, response, error in
@@ -70,7 +77,6 @@ struct Menu: View {
                 }
 
                 for menuItem in menuItems {
-                    print(menuItem.title ?? "booos")
                     let dish = DishEntitie(context: viewContext)
                     dish.price = menuItem.price
                     dish.title = menuItem.title
@@ -89,8 +95,6 @@ struct Menu: View {
         }.resume()
     }
 }
-
-
 extension Menu {
     private var heroView: some View {
 
@@ -185,7 +189,7 @@ extension Menu {
 
     }
 
-    #Preview {
-        Menu()
-    }
+}
+#Preview {
+    Menu()
 }
