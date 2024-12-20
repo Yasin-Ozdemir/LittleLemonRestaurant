@@ -10,9 +10,33 @@
 		EB2C53522D11C5A0007D8873 /* LittleLemonRestaurant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittleLemonRestaurant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		EB7E121A2D15FECA002894C5 /* Exceptions for "LittleLemonRestaurant" folder in "LittleLemonRestaurant" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				CoreData/ExampleDatabase.xcdatamodeld,
+			);
+			target = EB2C53512D11C5A0007D8873 /* LittleLemonRestaurant */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		EB7E121B2D15FECA002894C5 /* Exceptions for "LittleLemonRestaurant" folder in "Compile Sources" phase from "LittleLemonRestaurant" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = EB2C534E2D11C5A0007D8873 /* Sources */;
+			membershipExceptions = (
+				CoreData/ExampleDatabase.xcdatamodeld,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		EB2C53542D11C5A0007D8873 /* LittleLemonRestaurant */ = {
+		EB7E120E2D15FECA002894C5 /* LittleLemonRestaurant */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				EB7E121A2D15FECA002894C5 /* Exceptions for "LittleLemonRestaurant" folder in "LittleLemonRestaurant" target */,
+				EB7E121B2D15FECA002894C5 /* Exceptions for "LittleLemonRestaurant" folder in "Compile Sources" phase from "LittleLemonRestaurant" target */,
+			);
 			path = LittleLemonRestaurant;
 			sourceTree = "<group>";
 		};
@@ -32,7 +56,7 @@
 		EB2C53492D11C5A0007D8873 = {
 			isa = PBXGroup;
 			children = (
-				EB2C53542D11C5A0007D8873 /* LittleLemonRestaurant */,
+				EB7E120E2D15FECA002894C5 /* LittleLemonRestaurant */,
 				EB2C53532D11C5A0007D8873 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,7 +85,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				EB2C53542D11C5A0007D8873 /* LittleLemonRestaurant */,
+				EB7E120E2D15FECA002894C5 /* LittleLemonRestaurant */,
 			);
 			name = LittleLemonRestaurant;
 			packageProductDependencies = (
